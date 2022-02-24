@@ -1,0 +1,15 @@
+<body>
+    <video src="./av1.mp4" controls id="v"></video>
+    <button id="b">Opacity</button>
+    <script>
+        document.getElementById("b").addEventListener("click", myFunction);
+        
+        function myFunction() {
+          if (document.getElementById("v").style.opacity === "0.5") {
+            document.getElementById("v").style.opacity = "1.0"
+          } else {
+            document.getElementById("v").style.opacity = "0.5"
+          }
+        }
+    </script>
+</body>
